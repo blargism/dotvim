@@ -7,3 +7,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/xdebug"]
+	path = bundle/xdebug
+	url = https://github.com/travisj/php-xdebug-vim.git

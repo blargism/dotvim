@@ -1,4 +1,5 @@
-set tags=~/.vim/mytags/beckett
+colorscheme molokai
+set guifont=Monospace\ 9
 
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
@@ -155,6 +156,9 @@ set pastetoggle=<F11>
 set shiftwidth=4
 set tabstop=4
 
+" Wrapping is kinda evil
+set nowrap
+
 
 "------------------------------------------------------------
 " Mappings {{{1
@@ -172,6 +176,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * wincmd p
 

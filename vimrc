@@ -153,8 +153,8 @@ set pastetoggle=<F11>
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Wrapping is kinda evil
 set nowrap

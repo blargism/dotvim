@@ -1,5 +1,5 @@
 colorscheme molokai
-set guifont=Monospace\ 9
+set guifont=Audimat\ Mono\ 10
 
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
@@ -139,6 +139,9 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
+" Use relative line numbers
+set relativenumber
+
 
 "------------------------------------------------------------
 " Indentation options {{{1
@@ -159,6 +162,10 @@ set tabstop=2
 " Wrapping is kinda evil
 set nowrap
 
+"-----------------------------------------------------------
+" Colors provided by Mango.vim
+set background=dark
+color mango
 
 "------------------------------------------------------------
 " Mappings {{{1

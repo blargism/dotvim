@@ -1,5 +1,14 @@
-set tags=~/.vim/mytags/beckett
+if has("gui_running")
+	if has("gui_gtk2")
+		set guifont=Droid\ Sans\ Mono\ 10
+	elseif has("gui_macvim")
+		set guifont=Menlo\ Regular:h14
+	elseif has("gui_win32")
+		set guifont=Consolas:h11:cANSI
+	endif
+endif
 
+colorscheme molokai
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a

@@ -183,6 +183,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "
-"autocmd VimEnter * NERDTree
-"autocmd VimEnter * wincmd p
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
 

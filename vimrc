@@ -158,6 +158,7 @@ set relativenumber
 " two characters wide.
 set shiftwidth=2
 set tabstop=2
+set expandtab
 
 " Wrapping is kinda evil
 set nowrap
@@ -182,7 +183,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 
 "------------------------------------------------------------
+" NERDTree stuff
 "
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+let g:nerdtree_tabs_open_on_console_startup=1

@@ -1,4 +1,3 @@
-colorscheme molokai
 set guifont=Audimat\ Mono\ 10
 
 call pathogen#infect()
@@ -17,6 +16,9 @@ let g:syntastic_enable_highlighting=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_auto_jump=1
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
+set background=dark
+colorscheme solarized
 
 " Supertab stuff
 " nothing for now, we'll try the defaults
@@ -181,6 +183,9 @@ map Y y$
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
 
+" Map tab to <c-w> in normal mode
+nnoremap <tab> <c-w>
+nnoremap <tab><tab> <c-w><c-w>
 
 "------------------------------------------------------------
 " NERDTree stuff

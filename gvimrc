@@ -2,13 +2,14 @@ if has("gui_running")
 	if has("gui_gtk2")
 		set guifont=Inconsolata\ 10
 	elseif has("gui_macvim")
-		set guifont=Menlo\ Regular:h14
+		set guifont=Menlo\ Regular:h12
 	elseif has("gui_win32")
 		set guifont=Consolas:h11:cANSI
 	endif
 endif
 
-colorscheme molokai
+set background=dark
+colorscheme solarized
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a
@@ -17,11 +18,11 @@ colorscheme molokai
 "              on this file is still a good idea.
 
 "------------------------------------------------------------
-" Features {{{1
-"
+" Features {F[MaF[MaF[MaF[MaF[MaF[MaF{{1
+"[MaF
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
-
+  [MaF
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible

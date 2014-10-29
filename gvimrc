@@ -2,14 +2,15 @@ if has("gui_running")
 	if has("gui_gtk2")
 		set guifont=Inconsolata\ 10
 	elseif has("gui_macvim")
-		set guifont=Menlo\ Regular:h12
+		set guifont=Envy\ Code\ R:h13
 	elseif has("gui_win32")
 		set guifont=Consolas:h11:cANSI
 	endif
 endif
 
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme vividchalk
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature rich, example .vimrc. If you are a

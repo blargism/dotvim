@@ -49,3 +49,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vim-twig"]
+	path = vim-twig
+	url = https://github.com/evidens/vim-twig.git

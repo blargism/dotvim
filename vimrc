@@ -158,8 +158,8 @@ set relativenumber
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set expandtab
 
 " Wrapping is kinda evil
@@ -187,10 +187,19 @@ nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <tab> <c-w>
 nnoremap <tab><tab> <c-w><c-w>
 
-"------------------------------------------------------------
-" NERDTree stuff
-"
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
+" Make nerdtree easy to get to
+nmap <leader>ne :NERDTree<cr>
+nmap <leader>nc :NERDTreeClose<cr>
 
-let g:nerdtree_tabs_open_on_console_startup=1
+" Make Tab Navigation easier
+map TN :tabnext<cr>
+map TP :tabprevious<cr>
+
+"------------------------------------------------------------
+" NERDTred stuff
+" On console we _open_on_gui_startup=0isable NERDTree because it is not something we
+" need for our primary use, which is commit messages.
+" autocmd VimEnter * NERDTree
+" autocmd VimEnter * wincmd p
+"
+let g:nerdtree_tabs_open_on_console_startup=0

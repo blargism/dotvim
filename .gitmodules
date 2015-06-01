@@ -37,9 +37,6 @@
 [submodule "bundle/project"]
 	path = bundle/project
 	url = git@github.com:amiorin/vim-project.git
-[submodule "bundle/command-t"]
-	path = bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
@@ -52,3 +49,6 @@
 [submodule "vim-twig"]
 	path = vim-twig
 	url = https://github.com/evidens/vim-twig.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git@github.com:kien/ctrlp.vim.git

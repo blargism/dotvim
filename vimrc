@@ -171,6 +171,10 @@ set background=dark
 color mango
 
 "------------------------------------------------------------
+" Set up a nice 120 character highlight area
+let &colorcolumn=join(range(121,999),",")
+
+"------------------------------------------------------------
 " Mappings {{{1
 "
 " Useful mappings
@@ -190,6 +194,7 @@ nnoremap <tab><tab> <c-w><c-w>
 " Make nerdtree easy to get to
 nmap <leader>ne :NERDTree<cr>
 nmap <leader>nc :NERDTreeClose<cr>
+nmap <leader>nn :NERDTreeToggle<cr>
 
 " Make Tab Navigation easier
 map TN :tabnext<cr>
@@ -203,3 +208,8 @@ map TP :tabprevious<cr>
 " autocmd VimEnter * wincmd p
 "
 let g:nerdtree_tabs_open_on_console_startup=0
+
+"------------------------------------------------------------
+" ctrlp stuff
+let g:ctrl_map = '<c-p>'
+let g:ctrl_cmd = 'CtrlP'

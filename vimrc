@@ -35,6 +35,9 @@ filetype indent plugin on
 " Enable syntax highlighting
 syntax on
 
+" JSX as JS
+let g:jsx_ext_required=0
+
 
 "------------------------------------------------------------
 " Must have options {{{1

@@ -52,3 +52,6 @@
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = git@github.com:kien/ctrlp.vim.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git

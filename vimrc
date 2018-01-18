@@ -1,5 +1,3 @@
-set guifont=Audimat\ Mono\ 10
-
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()

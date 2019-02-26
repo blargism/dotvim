@@ -146,17 +146,12 @@ set relativenumber
 
 " Indentation settings for using hard tabs for indent. Display tabs as
 " two characters wide.
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 
 " Wrapping is kinda evil
 set nowrap
-
-"-----------------------------------------------------------
-" Colors provided by Mango.vim
-set background=dark
-color mango
 
 "------------------------------------------------------------
 " Set up a nice 120 character highlight area

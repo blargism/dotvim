@@ -203,3 +203,9 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 " Javascript Stuff
 let g:javascript_plugin_jsdoc = 1
 
+"-----------------------------------------------------------
+" JS Pretty Template Settings
+call jspretmpl#register_tag('html', 'html')
+
+autocmd FileType javascript JsPreTmpl
+autocmd FileType javascript.jsx JsPreTmpl

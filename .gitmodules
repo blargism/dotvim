@@ -70,3 +70,6 @@
 [submodule "bundle/validator"]
 	path = bundle/validator
 	url = https://github.com/maralla/validator.vim
+[submodule "bundle/vim-js-pretty-template"]
+	path = bundle/vim-js-pretty-template
+	url = https://github.com/Quramy/vim-js-pretty-template.git

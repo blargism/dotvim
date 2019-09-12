@@ -58,9 +58,6 @@
 [submodule "bundle/yajs"]
 	path = bundle/yajs
 	url = https://github.com/othree/yajs.vim.git
-[submodule "bundle/vim-html-template-literals"]
-	path = bundle/vim-html-template-literals
-	url = https://github.com/jonsmithers/vim-html-template-literals.git
 [submodule "bundle/ale"]
 	path = bundle/ale
 	url = https://github.com/w0rp/ale

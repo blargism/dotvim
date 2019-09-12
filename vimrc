@@ -2,8 +2,8 @@ call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " Supertab stuff
 " nothing for now, we'll try the defaults
@@ -196,3 +196,10 @@ let g:nerdtree_tabs_open_on_console_startup=0
 " ctrlp stuff
 let g:ctrl_map = '<c-p>'
 let g:ctrl_cmd = 'CtrlP'
+
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+"-----------------------------------------------------------
+" Javascript Stuff
+let g:javascript_plugin_jsdoc = 1
+

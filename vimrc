@@ -33,10 +33,6 @@ filetype indent plugin on
 " Enable syntax highlighting
 syntax on
 
-" JSX as JS
-let g:jsx_ext_required=0
-
-
 "------------------------------------------------------------
 " Must have options {{{1
 "
@@ -203,9 +199,8 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 " Javascript Stuff
 let g:javascript_plugin_jsdoc = 1
 
-"-----------------------------------------------------------
-" JS Pretty Template Settings
-call jspretmpl#register_tag('html', 'html')
-
 autocmd FileType javascript JsPreTmpl
 autocmd FileType javascript.jsx JsPreTmpl
+
+" JSX as JS
+let g:jsx_ext_required=0

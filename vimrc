@@ -16,7 +16,7 @@ call pathogen#helptags()
 "              on this file is still a good idea.
 
 "------------------------------------------------------------
-" Features {{{1
+" Features
 "
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
@@ -34,7 +34,7 @@ filetype indent plugin on
 syntax on
 
 "------------------------------------------------------------
-" Must have options {{{1
+" Must have options
 "
 " These are highly recommended options.
 
@@ -67,7 +67,7 @@ set hlsearch
 
 
 "------------------------------------------------------------
-" Usability options {{{1
+" Usability options
 "
 " These are options that users frequently set in their .vimrc. Some of them
 " change Vim's behaviour in ways which deviate from the true Vi way, but
@@ -126,8 +126,10 @@ set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 
 " Use relative line numbers
-set relativenumber
+" set relativenumber
 
+" Remap the leader to space
+let mapleader = " "
 
 "------------------------------------------------------------
 " Indentation options {{{1
@@ -199,8 +201,15 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 " Javascript Stuff
 let g:javascript_plugin_jsdoc = 1
 
-autocmd FileType javascript JsPreTmpl
-autocmd FileType javascript.jsx JsPreTmpl
-
 " JSX as JS
 let g:jsx_ext_required=0
+
+" Syntastic stuff
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
